@@ -2,18 +2,18 @@ require 'rbconfig'
 class Version < Formula
   desc ""
   homepage "https://github.com/ivan-dyachenko/version"
-  version "1.0.3"
+  version "1.0.4"
 
   if Hardware::CPU.is_64_bit?
     case RbConfig::CONFIG['host_os']
     when /mswin|msys|mingw|cygwin|bccwin|wince|emc/
       :windows
     when /darwin|mac os/
-      url "https://github.com/ivan-dyachenko/version/releases/download/v1.0.3/version_1.0.3_darwin_amd64.zip"
-      sha256 "ea24beaa12f75b6f925592db49e07a9cb266a41d5dc42910ea21d2b2bc5f8e2d"
+      url "https://github.com/ivan-dyachenko/version/releases/download/v1.0.4/version_1.0.4_darwin_amd64.zip"
+      sha256 "23be8d59f4c2cac4c18fd4c66aff6de36f14835f34366b0736b4007d22c369d0"
     when /linux/
-      url "https://github.com/ivan-dyachenko/version/releases/download/v1.0.3/version_1.0.3_linux_amd64.tar.gz"
-      sha256 "f9f43908faaa9296b52c161d89ab9f16e506d396579ad5efa6423f4c4567ea67"
+      url "https://github.com/ivan-dyachenko/version/releases/download/v1.0.4/version_1.0.4_linux_amd64.tar.gz"
+      sha256 "92f65e66f22d62c62e594bc310a292270596c5e54c7eec01755906d9dd66b293"
     when /solaris|bsd/
       :unix
     else
@@ -24,11 +24,11 @@ class Version < Formula
     when /mswin|msys|mingw|cygwin|bccwin|wince|emc/
       :windows
     when /darwin|mac os/
-      url "https://github.com/ivan-dyachenko/version/releases/download/v1.0.3/version_1.0.3_darwin_386.zip"
-      sha256 "d340da50c85f9f7b5732427fb48196c7d87a18c56b4062eb4b251b451d1f3fe8"
+      url "https://github.com/ivan-dyachenko/version/releases/download/v1.0.4/version_1.0.4_darwin_386.zip"
+      sha256 "5af12cd8d8c25acb89b20225bda7c886138936a5342d7bfa06ff8b4f6e8c000b"
     when /linux/
-      url "https://github.com/ivan-dyachenko/version/releases/download/v1.0.3/version_1.0.3_linux_386.tar.gz"
-      sha256 "aa7387a5330ea799e069044dc868bbedb223fdfe219b1277efe8b136965aec52"
+      url "https://github.com/ivan-dyachenko/version/releases/download/v1.0.4/version_1.0.4_linux_386.tar.gz"
+      sha256 "23706d879b1551dead83dc1f011800deb9bdeb285235e2feca8330fa68d000b7"
     when /solaris|bsd/
       :unix
     else
